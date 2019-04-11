@@ -1,0 +1,30 @@
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type=text/javascript>
+    $(function() {
+
+        $('input#test').bind('change', function() {
+        
+            var q = document.getElementById("test");
+            
+            $.getJSON('/ranked/'+q.value,
+                function(data) {
+                    r="";
+                    for (i in data.result) {
+                      r += data.result[i] + "\n";
+                    }
+                    document.getElementById("result").value = r;
+            });
+
+            return false;
+        });
+    });
+</script>
+
+<div class='container'>
+    <h2>TEST: Spell Correction and Auto-complete</h2>
+        <form>
+          Query:<br><input id=test type="text" name="txt">
+          <br><br>
+          Result:<br><textarea rows="30" cols="50" id=result type="text" name="txt"></textarea>
+        </form>
+</div>
