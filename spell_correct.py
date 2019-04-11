@@ -1,4 +1,3 @@
-# TODO: stemming, lemmatization, normalization
 import numpy as np
 
 INSERTION_COST = 0.2
