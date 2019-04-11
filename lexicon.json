@@ -1,0 +1,6 @@
+## Contains candidates results that are to be ranked 
+## against a user query.
+## Must be a list of comma separated values.
+## You may generate this file in any way, just
+## make sure the format is the same.
+["abcd@ymail.com", "ABCDE"]
