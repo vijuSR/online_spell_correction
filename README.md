@@ -31,6 +31,7 @@ It works by augmenting the Levenshtein distance. It is a basic implementation ba
 
 - `cd <root-dir-of-project>`
 - `python3 routes.py`
+- Type some query and wait for result (because it's a bit slow.)
 
 ## References:
 1. Gupta, J. P., Qin, Z., Bendersky, M., & Metzler, D. (2019). Personalized Online Spell Correction for Personal Search.
