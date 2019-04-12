@@ -5,6 +5,14 @@ Typical spell correction solutions used in production systems consist of large i
 
 It works by augmenting the Levenshtein distance. It is a basic implementation based on the algorithms defined in the paper referenced below.
 
+## A demo first :smiley:
+In demo gif:  
+Correct: Vulcanodon, Query: volacando  
+Correct: Eolambia, Query: ealaxmia  
+Correct: Gastonia, Query: aastonaa  
+
+![demo](https://user-images.githubusercontent.com/20581741/56034120-097f2e80-5d44-11e9-8c04-ff77da77aeb3.gif)
+
 ## Getting Started
 1. Language requirement: Python3 (developed using python3.6)  
 1. ### Get the code:
@@ -22,7 +30,7 @@ It works by augmenting the Levenshtein distance. It is a basic implementation ba
         - `cd <root-dir-of-project>`
         - `pip install -I -r requirements.txt`
 
-        #### That's all for the setup ! :smiley: 
+        #### That's all for the setup ! :clap:
         
 ## Run
 - The Lexicon
