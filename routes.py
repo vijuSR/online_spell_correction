@@ -5,7 +5,7 @@ from spell_correct import get_candidates_with_distance, generate_rank
 
 app = Flask(__name__)
 
-FILE_PATH = "G:/projects/auto_complete/lexicon.json"
+FILE_PATH = "./lexicon.json"
 
 
 def read_lexicon_file(file_path):
