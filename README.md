@@ -1,8 +1,9 @@
 # online_spell_correction
 Personalized online spell correction and auto-completion.
 
-It works by augmenting the Levenshtein distance.
-It is a basic implementation based on the algorithms defined in the paper referenced below.
+Typical spell correction solutions used in production systems consist of large indexed lookup tables based on a global model trained across many users over a large scale web corpus or a query log.For search over personal corpora, such as email, this global solution is not sufficient, as it ignores the user’s personal lexicon. Without personalization, global spelling fails to correct tail queries drawn from a user’s own, often idiosyncratic, lexicon. Personalization using existing algorithms is difficult due to resource constraints and unavailability of sufficient data to build per-user models [1].  
+
+It works by augmenting the Levenshtein distance. It is a basic implementation based on the algorithms defined in the paper referenced below.
 
 ## Getting Started
 1. Language requirement: Python3 (developed using python3.6)  
@@ -19,16 +20,17 @@ It is a basic implementation based on the algorithms defined in the paper refere
         - Windows: `cd </path/to/venv>` then `.\Scripts\activate`  
     - Install the requirements
         - `cd <root-dir-of-project>`
-        - `pip install --upgrade -I -r requirements.txt`
-    - The Lexicon
-        - `cd <root-dir-of-project>`: you can see a file named lexicon.json, it contains all the candidates that are to be ranked for a given user query input.
-        - Open the "lexicon.json" and fill it as instructed inside file.
+        - `pip install -I -r requirements.txt`
 
         #### That's all for the setup ! :smiley: 
         
 ## Run
+- The Lexicon
+        - `cd <root-dir-of-project>`: you can see a file named lexicon.json, it contains all the candidates that are to be ranked for a given user query input.
+        - Change the content of the "lexicon.json" as required. Currently it contains a sample lexicon for dynasore names.
+
 - `cd <root-dir-of-project>`
 - `python3 routes.py`
 
 ## References:
-- Gupta, J. P., Qin, Z., Bendersky, M., & Metzler, D. (2019). Personalized Online Spell Correction for Personal Search.
+1. Gupta, J. P., Qin, Z., Bendersky, M., & Metzler, D. (2019). Personalized Online Spell Correction for Personal Search.
