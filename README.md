@@ -5,8 +5,9 @@ Typical spell correction solutions used in production systems consist of large i
 
 It works by augmenting the Levenshtein distance. It is a basic implementation based on the algorithms defined in the paper referenced below.
 
-## A demo first :smiley:
-In demo gif:  
+## A demo first on names of ![t-rex_1f996](https://user-images.githubusercontent.com/20581741/56386466-74969c80-623f-11e9-8835-1980ce699f08.png)
+
+_In demo_  
 Correct: Vulcanodon, Query: volacando  
 Correct: Eolambia, Query: ealaxmia  
 Correct: Gastonia, Query: aastonaa  
